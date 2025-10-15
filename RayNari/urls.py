@@ -26,6 +26,9 @@ urlpatterns = [
     path('retreat/', include('retreat.urls', namespace='retreat')),  # /retreat
     path('ecom/', include('ecom.urls', namespace='ecom')),      # /ecom
     path('consultancy/', include('consultancy.urls', namespace='consultancy')),  # /consultancy
+    path('capital/', include('capital.urls', namespace='capital')), #/capital
+    path('construction/', include('construction.urls', namespace='construction')), #/construction
+    path('resort/', include('resort.urls', namespace='resort')), #/resort
 ]
 
 if settings.DEBUG:

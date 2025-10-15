@@ -47,6 +47,9 @@ INSTALLED_APPS = [
     'retreat',
     'consultancy',
     'blog',
+    'construction',
+    'resort',
+    'capital',
 ]
 
 MIDDLEWARE = [

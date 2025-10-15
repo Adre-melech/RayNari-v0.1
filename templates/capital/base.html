@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>{% block title %}RayNari | Capital{% endblock %}</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'capital/css/bootstrap.min.css' %}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{% static 'capital/css/style.css' %}">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{% static 'capital/css/responsive.css' %}">
+    <!-- fevicon -->
+    <link rel="icon" href="{% static 'capital/images/fevicon.png' %}" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="{% static 'capital/css/jquery.mCustomScrollbar.min.css' %}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="{% static 'capital/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'capital/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+</head>
+<body>
+      <!-- header top section start -->
+      <div class="header_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="call_text"><a href="#"><img src="{% static 'capital/images/map-icon.png' %}"><span class="call_text_left">Locations</span></a></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="call_text"><a href="#"><img src="{% static 'capital/images/call-icon.png' %}"><span class="call_text_left">+01 1234567890</span></a></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="call_text"><a href="#"><img src="{% static 'capital/images/mail-icon.png' %}"><span class="call_text_left">Demo@gmail.com</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header top section end -->
+      <!-- header section start -->
+      <div class="header_section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo"><a href=""><img src="{% static 'capital/images/logo.png' %}"></a></div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CUSTOMER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">NEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT US</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">LOGIN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SIGNUP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="{% static 'capital/images/search-icon.png' %}"></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        </div>
+      </div>
+      <!-- header section end -->
+
+    {% block content %}{% endblock %}
+
+      <!-- client section end -->
+      <!-- contact section start -->
+      <div class="contact_section layout_padding">
+        <div class="container">
+          <h1 class="contact_text">Contact Us</h1>
+          <div class="contact_section_2">
+            <div class="row">
+              <div class="col-md-6">
+                <form action="/action_page.php">
+                  <div class="form-group">
+                    <input type="text" class="email-bt" placeholder="Name" name="Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="email-bt" placeholder="Email" name="Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="email-bt" placeholder="Subject" name="Email">
+                  </div>
+                    <div class="form-group">
+                      <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="text"></textarea>
+                    </div>
+                  </form>
+                  <div class="main_bt"><a href="#">Send</a></div>
+              </div>
+              <div class="col-md-6">
+                <div class="map">
+                  <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer section start -->
+        <div class="footer_section layout_padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="footer_logo"><img src="{% static 'capital/images/footer-logo.png' %}"></div>
+                <p class="dolor_amet_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it </p>
+              </div>
+              <div class="col-sm-4">
+                <h1 class="footer_about">About Us</h1>
+                <p class="dolor_amet_text_1">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p>
+              </div>
+              <div class="col-sm-4">
+                <h1 class="footer_about">Newsletter</h1>
+                <input type="text" class="mail_text" placeholder="Enter your Email" name="text">
+                <button class="subscribe_bt">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer section end -->
+      </div>
+      <!-- contact section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+        <div class="container">
+          <p class="copyright">2023 All Rights Reserved. | Designed by <a href="#">Wisecsite</a> Powered By <a href="#">Asper.SE</a></p>
+        </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="{% static 'capital/js/jquery.min.js' %}"></script>
+      <script src="{% static 'capital/js/popper.min.js' %}"></script>
+      <script src="{% static 'capital/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'capital/js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'capital/js/plugin.js' %}"></script>
+      <!-- sidebar -->
+      <script src="{% static 'capital/js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'capital/js/custom.js' %}"></script>
+      <!-- javascript --> 
+      <script src="{% static 'capital/js/owl.carousel.js' %}"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+</html>
